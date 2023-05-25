@@ -1,2 +1,17 @@
-
-<router-outlet></router-outlet>
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Side Navigation -->
+    <div class="side-nav">
+      <app-sidenav></app-sidenav>
+    </div>
+    <!-- Pages to be shown -->
+    <div class="main-section">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
