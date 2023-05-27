@@ -1,17 +1,16 @@
-<div class="container">
+<!-- Main Container -->
+<div class="main-container">
   <!-- Header -->
-  <div class="header">
+  <div class="header fixed left-0 right-0 top-0 z-50">
     <app-header></app-header>
   </div>
-  <!-- Main Container -->
-  <div class="main-container">
-    <!-- Side Navigation -->
-    <div class="side-nav">
-      <app-sidenav></app-sidenav>
-    </div>
-    <!-- Pages to be shown -->
-    <div class="main-section">
-      <router-outlet></router-outlet>
-    </div>
+  <!-- Side Navigation -->
+  <div class="side-nav ">
+    <app-sidenav></app-sidenav>
+  </div>
+  <!-- Pages to be shown -->
+  <!-- h-auto -> auto hight btw -->
+  <div class="main-section" class="p-4 md:ml-64 pt-20 bg-gray-100 h-screen">
+    <router-outlet></router-outlet>
   </div>
 </div>
