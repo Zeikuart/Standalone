@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+// Routes:
 export const routes: Routes = [
     // Default
     { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
