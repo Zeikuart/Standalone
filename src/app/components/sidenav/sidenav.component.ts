@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { navItems } from './nav-data';
 
 @Component({
   selector: 'app-sidenav',
@@ -12,8 +13,9 @@ import { SidenavService } from 'src/app/services/sidenav.service';
 })
 export class SidenavComponent {
 
-  sales:boolean = false
   desktop:boolean = true
+  // Sidenav items
+  navItems = navItems
 
   constructor( private readonly sidenav: SidenavService) {}
 
@@ -26,8 +28,12 @@ export class SidenavComponent {
     this.sidenav.trigger = false
   }
   // Collapse Trigger
-  collapseToggle(id:string){
-    if (id === 'sales'){this.sales = !this.sales}
+  collapseToggle(index:any): void{
+    console.log("Index: ", index)
+    
+    if (!this.navItems[index]) { return }
+    this.navItems[index].toggle = !this.navItems[index].toggle
+    
   }
 
 
