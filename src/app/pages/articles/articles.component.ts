@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArticleCardComponent } from 'src/app/components/article-card/article-card.component';
+
+@Injectable({ providedIn: 'root'})
 
 @Component({
   selector: 'app-articles',
@@ -10,5 +12,11 @@ import { ArticleCardComponent } from 'src/app/components/article-card/article-ca
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent {
+
+  searchData:string = ""
+
+  print() {
+    console.log(`Requesting ${this.searchData} to server...`)
+  }
 
 }
