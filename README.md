@@ -16,6 +16,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 * Standalone Components.
 * Lazy Loading.
+* Dynamic SideNav.
+* SVG files.
+* Components Interaction.
+* Responsive.
 
 ## Further help
 

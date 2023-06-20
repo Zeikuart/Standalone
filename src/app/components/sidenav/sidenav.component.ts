@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { SidenavService } from 'src/app/services/sidenav.service';
+import { SidenavService } from 'src/app/services/sidenav/sidenav.service';
 import { navItems } from './nav-data';
 
 @Component({

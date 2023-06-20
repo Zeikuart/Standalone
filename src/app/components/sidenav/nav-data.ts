@@ -17,7 +17,7 @@ export const navItems = [
         { title: "Option B" }
       ]
     },
-    { title: "Nav State",
+    { title: "Invoices",
       icon: "assets/icons.svg#orders"
     }
   ]
